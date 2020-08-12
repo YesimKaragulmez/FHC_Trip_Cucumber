@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.311">
+<testcase classname="Negativelogin feature" name="Negative scenario with wrong credential username and password" time="29.668">
+<system-out><![CDATA[Given user on the fhctrip.com...............................................passed
+And user enter the wrong credentials........................................passed
+Then verify the errormessage................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,96 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-28T15:56:22.711Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Negative scenario with wrong credential username and password",
+        "description": "",
+        "id": "negativelogin-feature;negative-scenario-with-wrong-credential-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 768000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26203000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user on the fhctrip.com",
+            "match": {
+              "location": "stepdefinitions.Negativelogin_Test.user_on_the_fhctrip_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2511000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter the wrong credentials",
+            "match": {
+              "location": "stepdefinitions.Negativelogin_Test.user_enter_the_wrong_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify the errormessage",
+            "match": {
+              "location": "stepdefinitions.Negativelogin_Test.verify_the_errormessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Negativelogin"
+          }
+        ]
+      }
+    ],
+    "name": "Negativelogin feature",
+    "description": "",
+    "id": "negativelogin-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Negativelogin.feature",
+    "tags": [
+      {
+        "name": "@Negativelogin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

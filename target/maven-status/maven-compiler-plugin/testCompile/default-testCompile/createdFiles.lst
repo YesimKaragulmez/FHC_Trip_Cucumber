@@ -1,0 +1,16 @@
+pages\ContactPage.class
+stepdefinitions\Fhc_hotel_creation.class
+stepdefinitions\Hooks.class
+stepdefinitions\RoomsPage_Test.class
+runners\Runner.class
+pages\Fhc_loginPage.class
+stepdefinitions\FhcTrip_Login.class
+utilities\Driver.class
+utilities\ConfigurationReader.class
+pages\Room_Creation_Page.class
+stepdefinitions\FHCTripHomePage_Test.class
+pages\Room_Reservation_Page.class
+pages\Fhc_hotelCreation_Page.class
+pages\RoomsPage.class
+pages\FHCTripHomePage.class
+stepdefinitions\Contact_Page_Test.class
