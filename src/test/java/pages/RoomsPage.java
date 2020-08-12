@@ -18,7 +18,7 @@ public class RoomsPage {
 
     @FindBy(id = "AdultCount")
     public WebElement adultCount;
-
+//degisiklik
     @FindBy(id = "ChildrenCount")
     public WebElement childrenCount;
 
