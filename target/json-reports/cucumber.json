@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-28T15:56:22.711Z",
+        "start_timestamp": "2020-08-28T22:59:44.298Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 4,
-        "name": "Negative scenario with wrong credential username and password",
+        "name": "2011 Manager is able to login with valid credentials",
         "description": "",
-        "id": "negativelogin-feature;negative-scenario-with-wrong-credential-username-and-password",
+        "id": "login-functionality;2011-manager-is-able-to-login-with-valid-credentials",
         "after": [
           {
             "result": {
-              "duration": 768000000,
+              "duration": 345000000,
               "status": "passed"
             },
             "match": {
@@ -35,56 +35,104 @@
         "steps": [
           {
             "result": {
-              "duration": 26203000000,
+              "duration": 45158000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user on the fhctrip.com",
+            "name": "User is on Home Page",
             "match": {
-              "location": "stepdefinitions.Negativelogin_Test.user_on_the_fhctrip_com()"
+              "location": "stepdefinitions.FhcTrip_Login.user_is_on_Home_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2511000000,
+              "duration": 2892000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user enter the wrong credentials",
+            "name": "Click on Log in link",
             "match": {
-              "location": "stepdefinitions.Negativelogin_Test.user_enter_the_wrong_credentials()"
+              "location": "stepdefinitions.FhcTrip_Login.click_on_Log_in_link()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 38000000,
+              "duration": 126000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "verify the errormessage",
+            "name": "Click on user name text box and type it \"manager2\"",
             "match": {
-              "location": "stepdefinitions.Negativelogin_Test.verify_the_errormessage()"
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.FhcTrip_Login.click_on_user_name_text_box_and_type_it(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on password name text box and type it \"Man1ager2!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Man1ager2!\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepdefinitions.FhcTrip_Login.click_on_password_name_text_box_and_type_it(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23932000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click login button",
+            "match": {
+              "location": "stepdefinitions.FhcTrip_Login.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify LISTOFUSERS text is located",
+            "match": {
+              "location": "stepdefinitions.FhcTrip_Login.verify_LISTOFUSERS_text_is_located()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Negativelogin"
+            "name": "@fhclogin"
           }
         ]
       }
     ],
-    "name": "Negativelogin feature",
+    "name": "Login Functionality",
     "description": "",
-    "id": "negativelogin-feature",
+    "id": "login-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Negativelogin.feature",
+    "uri": "file:src/test/resources/features/fhclogin.feature",
     "tags": [
       {
-        "name": "@Negativelogin",
+        "name": "@fhclogin",
         "type": "Tag",
         "location": {
           "line": 1,

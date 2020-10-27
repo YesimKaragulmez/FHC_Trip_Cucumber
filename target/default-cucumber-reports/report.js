@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Negativelogin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/fhclogin.feature");
 formatter.feature({
-  "name": "Negativelogin feature",
+  "name": "Login Functionality",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Negativelogin"
+      "name": "@fhclogin"
     }
   ]
 });
 formatter.scenario({
-  "name": "Negative scenario with wrong credential username and password",
+  "name": "2011 Manager is able to login with valid credentials",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Negativelogin"
+      "name": "@fhclogin"
     }
   ]
 });
@@ -23,31 +23,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user on the fhctrip.com",
+  "name": "User is on Home Page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.Negativelogin_Test.user_on_the_fhctrip_com()"
+  "location": "stepdefinitions.FhcTrip_Login.user_is_on_Home_Page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter the wrong credentials",
+  "name": "Click on Log in link",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.Negativelogin_Test.user_enter_the_wrong_credentials()"
+  "location": "stepdefinitions.FhcTrip_Login.click_on_Log_in_link()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify the errormessage",
+  "name": "Click on user name text box and type it \"manager2\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.FhcTrip_Login.click_on_user_name_text_box_and_type_it(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on password name text box and type it \"Man1ager2!\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.FhcTrip_Login.click_on_password_name_text_box_and_type_it(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.FhcTrip_Login.click_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify LISTOFUSERS text is located",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.Negativelogin_Test.verify_the_errormessage()"
+  "location": "stepdefinitions.FhcTrip_Login.verify_LISTOFUSERS_text_is_located()"
 });
 formatter.result({
   "status": "passed"

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.311">
-<testcase classname="Negativelogin feature" name="Negative scenario with wrong credential username and password" time="29.668">
-<system-out><![CDATA[Given user on the fhctrip.com...............................................passed
-And user enter the wrong credentials........................................passed
-Then verify the errormessage................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="73.388">
+<testcase classname="Login Functionality" name="2011 Manager is able to login with valid credentials" time="72.75">
+<system-out><![CDATA[Given User is on Home Page..................................................passed
+And Click on Log in link....................................................passed
+And Click on user name text box and type it "manager2"......................passed
+And Click on password name text box and type it "Man1ager2!"................passed
+And Click login button......................................................passed
+Then Verify LISTOFUSERS text is located.....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
